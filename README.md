@@ -87,6 +87,12 @@ To start the application in development mode with automatic reloading:
 npm run dev
 ```
 
+### Optional tsconfig configuration
+
+```bash
+npx tsc --init
+```
+
 ## References
 
 - Website: [BuzzingCode](https://buzzingcode.com)
