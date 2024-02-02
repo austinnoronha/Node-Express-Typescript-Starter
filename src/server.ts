@@ -2,6 +2,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import path from "path";
+import logger from "morgan";
 import * as expHbs from "express-handlebars";
 import { homeRoute } from "./routes/home";
 import { usersRoute } from "./routes/users";
@@ -23,6 +24,8 @@ app.engine(
   })
 );
 
+//Set Logger
+app.use(logger('combined'));
 
 app.use(homeRoute);
 app.use(usersRoute);
