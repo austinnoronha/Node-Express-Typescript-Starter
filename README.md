@@ -54,13 +54,13 @@ Before you start, ensure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/node-express-starter.git
+    git clone https://github.com/austinnoronha/Node-Express-Typescript-Starter.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd node-express-starter
+    cd Node-Express-Typescript-Starter
     ```
 
 3. Install dependencies:
