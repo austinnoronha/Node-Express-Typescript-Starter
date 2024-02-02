@@ -36,8 +36,12 @@ app.use((req: Request, res: Response, next) => {
   res.status(404); // using response here
   res.set('X-Custom-Page-Err', 'Page not found!')
   res.send("Oops! I don't exist.")
+  if(app.get('env') === 'development'){
+    // add custom message or code  
+  }
   //next(err);
 });
+
 
 //Server listens to PORT:3000
 app.listen(port, () => {
