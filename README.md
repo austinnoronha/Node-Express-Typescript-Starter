@@ -79,6 +79,13 @@ To transpile TypeScript code to JavaScript:
 npm run build
 ```
 
+**This will internally perform post-build tasks using Gulp.
+
+```bash
+gulp copy
+```
+
+
 ### Run in Development Mode
 
 To start the application in development mode with automatic reloading:
@@ -87,11 +94,20 @@ To start the application in development mode with automatic reloading:
 npm run dev
 ```
 
+
 ### Optional tsconfig configuration
 
 ```bash
 npx tsc --init
 ```
+
+## Usage of Public Folder
+
+The `public/` folder is used to store static files that are not moved to the `dist/` folder. Make sure to place all your static assets such as images, stylesheets, and client-side scripts in this folder.
+
+## Gulp Configuration
+
+The project uses Gulp to manage tasks such as copying files. Currently, the `src/views/` directory is moved using Gulp since the TypeScript configuration does not allow it to be moved automatically.
 
 ## References
 
