@@ -24,6 +24,9 @@ app.engine(
   })
 );
 
+//Defining middleware to serve static files
+app.use("/assets", express.static('public'));
+
 //Set Logger
 app.use(logger('combined'));
 
