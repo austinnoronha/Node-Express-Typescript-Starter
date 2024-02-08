@@ -1,29 +1,101 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Node Express + Typescript Starter!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body class="full-width">
-    <header class="navbar navbar-expand-lg bg-dark border-bottom border-body">
-        <div class="container">
-            <a href="javascript:;" class="navbar-brand">FlextIt</a>
-        </div>
-        
-    </header>
-    <div class="container">
-         {{{body}}}
-    </div>
-   <footer>
-       <span>&copy; 2024 | FlexIt</span>
-   </footer>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</body>
+  </head>
+  <body>
+    <main>
+      <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+          <div class="px-3 py-2 text-bg-dark border-bottom">
+            <div class="container">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="javascript:;"
+                  class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+                ><i class="bi bi-xbox"></i><span
+                    class="p-2 ms-auto"
+                  >FlextIt</span></a>
+
+                <ul
+                  class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+                >
+                  <li>
+                    <a href="#" class="nav-link text-secondary">
+                      <svg
+                        class="bi bi-home d-block mx-auto mb-1"
+                        width="24"
+                        height="24"
+                      ><use xlink:href="#home"></use></svg>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg
+                        class="bi d-block mx-auto mb-1"
+                        width="24"
+                        height="24"
+                      ><use xlink:href="#speedometer2"></use></svg>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg
+                        class="bi d-block mx-auto mb-1"
+                        width="24"
+                        height="24"
+                      ><use xlink:href="#people-circle"></use></svg>
+                      Customers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+
+    {{{body}}}
+    
+        <footer>
+            <span>&copy; 2024 | FlexIt</span>
+        </footer>
+      </div>
+    </main>
+
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

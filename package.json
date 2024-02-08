@@ -4,9 +4,10 @@
   "description": "Nodejs App (Typescript) for Learning",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "SET NODE_ENV=production && npx tsc",
     "start": "node dist/server.js",
-    "dev": "nodemon src/server.ts"
+    "dev": "nodemon src/server.ts",
+    "postbuild": "gulp copy"
   },
   "keywords": [
     "node",
@@ -19,12 +20,14 @@
     "@types/hbs": "^4.0.4",
     "@types/morgan": "^1.9.9",
     "@types/node": "^20.11.13",
+    "gulp": "^4.0.2",
     "nodemon": "^3.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
     "@types/express-handlebars": "^6.0.0",
+    "bootstrap": "^5.3.2",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
